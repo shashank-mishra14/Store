@@ -1,7 +1,13 @@
 import "./App.css";
+import PreNavbar from "./components/PreNavbar";
+import React from "react";
 
 function App() {
- <div className=""></div>
+  return (
+    <div>
+      <PreNavbar />
+    </div>
+  );
 }
 
 export default App;
