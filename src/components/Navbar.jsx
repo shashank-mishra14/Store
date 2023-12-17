@@ -22,7 +22,7 @@ const Navbar = () => {
         <Link to="/">
           <img src={logo} alt="Not" id="logoImage" />
         </Link>
-
+        </div>
         <Link className="navlinks" to="/miphones">
           Mi Phones
         </Link>
@@ -51,8 +51,7 @@ const Navbar = () => {
           <input type="text" name="search" placeholder="Search Producs" />
           {searchIcon}
         </div>
-      </div>
-    </div>
+      </div>        
   );
 };
 

@@ -8,3 +8,46 @@
     background-color: white;
     border-bottom: 1px solid rgb(41, 41, 41);
 }
+
+.logo{
+    width: 58px;
+    background-color: orangered;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    right :2vmax
+}
+
+.navlinks{
+    color: rgb(59, 58, 58);
+    text-decoration: none;
+    margin: 1vmax 1.2vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.1vmax;
+}
+
+.navlinks:hover{
+    color: orangered;
+}
+.searchbox{
+position: relative;
+left: 5vmax;
+border-bottom:1px solid rgb(41, 41, 41);
+width: 15vmax;
+font-size: 1.1vmax;
+outline: none;
+color: rgb(59, 58, 58);
+font-weight: 100;
+border: none;
+}
+.searchbox > input{
+    border-bottom:1px solid rgb(41, 41, 41);
+    width: 15vmax;
+    font-size: 1.1vmax;
+    outline: none;
+    color: rgb(59, 58, 58);
+    font-weight: 100;
+    border: none;
+    }
