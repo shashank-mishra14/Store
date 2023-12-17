@@ -1,0 +1,10 @@
+.nav{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1vmax;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
