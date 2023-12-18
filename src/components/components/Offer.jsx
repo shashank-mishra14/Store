@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Offer = () => {
+const Offer = (src,link,index) => {
   return (
-    <div>Offer</div>
+    <a href={link} ><img src={src} alt={`${index} Offer`} /></a>
   )
 }
 

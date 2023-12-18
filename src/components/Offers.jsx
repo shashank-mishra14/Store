@@ -1,10 +1,11 @@
 import React from "react";
 import Offer from "./components/Offer.jsx";
-const Offers = () => {
+import "../styles/Offers.css";
+const Offers = ({offer}) => {
   return (
     <div>
       <div className="offersSection">
-        {Offers.map((item, index) => (
+        {offer.map((item, index) => (
           <Offer 
             key={item.img}
             index={index}
