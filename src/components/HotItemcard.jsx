@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../styles/HotItemcard.css'
 const HotItemcard = ({image, index, name, price}) => {
   return (
     <div className='HotItemCard'>

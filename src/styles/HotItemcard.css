@@ -1,0 +1,16 @@
+.HotItemcard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 31%;
+}
+
+.HotItemcard > img{
+    width:70%;
+}
+
+.HotItemcard > p{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color: rgb(85, 83, 83);
+}
