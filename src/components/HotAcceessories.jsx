@@ -16,7 +16,7 @@ const HotAcceessories = (
   return (
     <div className="HotAcceessories">
       <div>
-        <img src={musicCover || smartDeviceCover} alt="Cover" />
+        <img src={musicCover || smartDeviceCover || homeCover || lifestyleCover || mobileAccessoriesCover} alt="Cover" />
       </div>
 
       <div>
@@ -30,7 +30,7 @@ const HotAcceessories = (
               index={index}
             />
           ))}
-        ;;
+        ;
         {smartDevice &&
           smartDevice.map((item, index) => (
             <HotItemcard
@@ -41,7 +41,40 @@ const HotAcceessories = (
               index={index}
             />
           ))}
-        ;;
+        ;
+        {home &&
+          home.map((item, index) => (
+            <HotItemcard
+              key={item.img}
+              name={item.name}
+              price={item.price}
+              image={item.image}
+              index={index}
+            />
+          ))}
+          ;
+          {lifestyle &&
+          lifestyle.map((item, index) => (
+            <HotItemcard
+              key={item.img}
+              name={item.name}
+              price={item.price}
+              image={item.image}
+              index={index}
+            />
+          ))}
+          ;
+          {mobileAccessories &&
+          mobileAccessories.map((item, index) => (
+            <HotItemcard
+              key={item.img}
+              name={item.name}
+              price={item.price}
+              image={item.image}
+              index={index}
+            />
+          ))}
+          ;
       </div>
     </div>
   );
