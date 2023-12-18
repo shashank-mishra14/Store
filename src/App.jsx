@@ -13,7 +13,7 @@ function App() {
         <PreNavbar />
         <Navbar />
         <Slider start={data.banner.start}/>
-        <Offers  offers={data.offer}/>
+        <Offers  offer  ={data.offer}/>
       </Router>
     </div>
   );
