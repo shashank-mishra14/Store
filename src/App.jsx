@@ -7,7 +7,8 @@ import Slider from "./components/Slider.jsx";
 import data from "./data/data.json";
 import Offers from "./components/Offers.jsx";
 import Heading from "./components/Heading.jsx";
-import StarProducts from "./components/StarProducts.jsx";
+import StarProduct from "./components/StarProduct.jsx";
+import HotAcceessoriesMenu from "./components/HotAcceessoriesMenu.jsx";
 function App() {
   return (
     <div>
@@ -17,7 +18,9 @@ function App() {
         <Slider start={data.banner.start}/>
         <Offers  offer  ={data.offer}/>
         <Heading text={"Star Products"}/>
-        <StarProducts starProducts={data.starProducts}/>
+        <StarProduct starProduct={data.starProduct}/>
+        <Heading text={"Hot Accessories"}/>
+        <HotAcceessoriesMenu/>
       </Router>
     </div>
   );
