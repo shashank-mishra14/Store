@@ -28,6 +28,15 @@ function App() {
         <Route exact path="/smartDevice">
         <HotAcceessories smartDevice={data.hotAccessories.smartDevice} smartDeviceCover={data.hotAccessoriesCover.smartDevice}/> 
         </Route>
+        <Route exact path="/home">
+        <HotAcceessories home={data.hotAccessories.home} homeCover={data.hotAccessoriesCover.home}/> 
+        </Route>
+        <Route exact path="/lifestyle">
+        <HotAcceessories lifestyle={data.hotAccessories.lifestyle} lifestyleCover={data.hotAccessoriesCover.lifestyle}/> 
+        </Route>
+        <Route exact path="/mobileAccessories">
+        <HotAcceessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}/> 
+        </Route>
       </Router>
     </div>
   );
