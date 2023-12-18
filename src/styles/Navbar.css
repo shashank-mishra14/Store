@@ -28,8 +28,13 @@
     font-size: 1.1vmax;
 }
 
+#logoimage{
+    transition
+    : all 0.5s ease-in-out;
+}
 .navlinks:hover{
     color: orangered;
+    text-decoration: none;
 }
 .searchbox{
 position: relative;
