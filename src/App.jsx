@@ -2,13 +2,14 @@ import "./App.css";
 import PreNavbar from "./components/PreNavbar";
 import React from "react";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Slider from "./components/Slider.jsx";
 import data from "./data/data.json";
 import Offers from "./components/Offers.jsx";
 import Heading from "./components/Heading.jsx";
 import StarProduct from "./components/StarProduct.jsx";
 import HotAcceessoriesMenu from "./components/HotAcceessoriesMenu.jsx";
+import HotAcceessories from "./components/HotAcceessories.jsx";
 function App() {
   return (
     <div>
@@ -21,6 +22,9 @@ function App() {
         <StarProduct starProduct={data.starProduct}/>
         <Heading text={"Hot Accessories"}/>
         <HotAcceessoriesMenu/>
+        <Route exact path="/music">
+        <HotAcceessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}/> 
+        </Route>
       </Router>
     </div>
   );
