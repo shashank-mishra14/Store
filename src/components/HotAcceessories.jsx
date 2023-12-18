@@ -5,7 +5,7 @@ const HotAcceessories = (music, musicCover) => {
   return (
     <div className="HotAcceessories">
       <div>
-        <img src={music} alt="Cover" />
+        <img src={musicCover} alt="Cover" />
       </div>
 
       <div>
