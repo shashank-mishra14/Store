@@ -8,15 +8,15 @@ const HotAcceessories = (
   smartDeviceCover,
   home,
   homeCover,
-  lifestyle,
-  lifestyleCover,
+  lifeStyle,
+  lifeStyleCover,
   mobileAccessories,
   mobileAccessoriesCover
 ) => {
   return (
     <div className="HotAcceessories">
       <div>
-        <img src={musicCover || smartDeviceCover || homeCover || lifestyleCover || mobileAccessoriesCover} alt="Cover" />
+        <img src={musicCover || smartDeviceCover || homeCover || lifeStyleCover || mobileAccessoriesCover} alt="Cover" />
       </div>
 
       <div>
@@ -53,8 +53,8 @@ const HotAcceessories = (
             />
           ))}
           ;
-          {lifestyle &&
-          lifestyle.map((item, index) => (
+          {lifeStyle &&
+          lifeStyle.map((item, index) => (
             <HotItemcard
               key={item.img}
               name={item.name}

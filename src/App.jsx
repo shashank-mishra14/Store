@@ -32,7 +32,7 @@ function App() {
         <HotAcceessories home={data.hotAccessories.home} homeCover={data.hotAccessoriesCover.home}/> 
         </Route>
         <Route exact path="/lifestyle">
-        <HotAcceessories lifestyle={data.hotAccessories.lifestyle} lifestyleCover={data.hotAccessoriesCover.lifestyle}/> 
+        <HotAcceessories lifeStyle={data.hotAccessories.lifestyle} lifeStyleCover={data.hotAccessoriesCover.lifeStyle}/> 
         </Route>
         <Route exact path="/mobileAccessories">
         <HotAcceessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}/> 
