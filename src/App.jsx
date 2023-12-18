@@ -25,6 +25,9 @@ function App() {
         <Route exact path="/music">
         <HotAcceessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}/> 
         </Route>
+        <Route exact path="/smartDevice">
+        <HotAcceessories smartDevice={data.hotAccessories.smartDevice} smartDeviceCover={data.hotAccessoriesCover.smartDevice}/> 
+        </Route>
       </Router>
     </div>
   );
