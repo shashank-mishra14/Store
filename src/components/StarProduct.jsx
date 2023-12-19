@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/StarProduct.css'
-const StarProduct = (starProduct) => {
+const StarProduct = ({starProduct}) => {
   return (
     <div className='starProduct'>
          <div> <a href={starProduct[0].url}> <img src={starProduct[0].image} alt="1st Product" /></a></div>
