@@ -47,7 +47,7 @@ function App() {
         <Video vidoes ={data.videos}/>
         <Heading text={"IN THE PRESS"}/>
         <Banner banner={data.banner}/>
-        <Footer/>
+        <Footer footer={data.footer}/>
       </Router>
     </div>
   );
