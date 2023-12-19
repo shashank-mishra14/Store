@@ -5,7 +5,7 @@ const ProductReviews = ({productReviews}) => {
   return (
     <div className='productReviews'>
         {productReviews.map((item, index)=>(
-            <ProductReviewCard/>
+            <ProductReviewCard price={item.price} name={item.name} review= {item.review} index= {index} key={item.image} />
         ))}
     </div>
   )
