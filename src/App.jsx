@@ -13,6 +13,7 @@ import HotAcceessories from "./components/HotAcceessories.jsx";
 import ProductReviews from "./components/ProductReviews.jsx";
 import Video from "./components/Video.jsx";
 import Banner from "./components/Banner.jsx";
+import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <div>
@@ -46,6 +47,7 @@ function App() {
         <Video vidoes ={data.videos}/>
         <Heading text={"IN THE PRESS"}/>
         <Banner banner={data.banner}/>
+        <Footer/>
       </Router>
     </div>
   );
