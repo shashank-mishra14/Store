@@ -11,6 +11,7 @@ import StarProduct from "./components/StarProduct.jsx";
 import HotAcceessoriesMenu from "./components/HotAcceessoriesMenu.jsx";
 import HotAcceessories from "./components/HotAcceessories.jsx";
 import ProductReviews from "./components/ProductReviews.jsx";
+import Video from "./components/Video.jsx";
 function App() {
   return (
     <div>
@@ -40,6 +41,8 @@ function App() {
         </Route>
         <Heading text={"Product Reviews"}/>
         <ProductReviews productReviews={data.productReviews}/>
+        <Heading text={"Videos"}/>
+        <Video vidoes ={data.videos}/>
       </Router>
     </div>
   );
