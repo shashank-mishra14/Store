@@ -1,5 +1,5 @@
 import React from 'react'
-
+import NavCard from './NavCard.jsx'
 const NavOptions = ({miPhones, redmiPhones, tv, laptop, fitnessAndLifestyle, home, audio, accessories} ) => {
     return (
         <div className="navOptions"> 
