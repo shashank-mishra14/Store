@@ -10,6 +10,7 @@ import Heading from "./components/Heading.jsx";
 import StarProduct from "./components/StarProduct.jsx";
 import HotAcceessoriesMenu from "./components/HotAcceessoriesMenu.jsx";
 import HotAcceessories from "./components/HotAcceessories.jsx";
+import ProductReviews from "./components/ProductReviews.jsx";
 function App() {
   return (
     <div>
@@ -37,6 +38,8 @@ function App() {
         <Route exact path="/mobileAccessories">
         <HotAcceessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}/> 
         </Route>
+        <Heading text={"Product Reviews"}/>
+        <ProductReviews productReviews={data.productReviews}/>
       </Router>
     </div>
   );
