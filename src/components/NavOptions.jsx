@@ -10,7 +10,41 @@ const NavOptions = ({miPhones, redmiPhones, tv, laptop, fitnessAndLifeStyle, hom
     const [homeToggle,setHomeToggle] = useState(false);
     const [audioToggle,setAudioToggle] = useState(false);
     const [accessoriesToggle,setAccessoriesToggle] = useState(false);
-    
+
+    useEffect(() => {
+
+        if(window.location.pathname === "/miPhones"){
+            setMiPhoneToggle(true);
+        }
+
+        if(window.location.pathname === "/redmiPhones"){
+            setRedmiPhoneToggle(true);
+        }
+
+        if(window.location.pathname === "/tv"){
+            setTvToggle(true);
+        }
+
+        if(window.location.pathname === "/laptop"){
+            setLaptopToggle(true);
+        }
+
+        if(window.location.pathname === "/fitnessAndLifeStyle"){
+            setFitnessToggle(true);
+        }
+
+        if(window.location.pathname === "/home"){
+            setHomeToggle(true);
+        }
+
+        if(window.location.pathname === "/audio"){
+            setAudioToggle(true);
+        }
+
+        if(window.location.pathname === "/accessories"){
+            setAccessoriesToggle(true);
+        }
+    },[])
     return (
         <div className="navOptions"> 
 
