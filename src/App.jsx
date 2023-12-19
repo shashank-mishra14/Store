@@ -45,7 +45,7 @@ function App() {
         <Heading text={"Videos"}/>
         <Video vidoes ={data.videos}/>
         <Heading text={"IN THE PRESS"}/>
-        <Banner/>
+        <Banner banner={data.banner}/>
       </Router>
     </div>
   );
