@@ -1,8 +1,8 @@
 import React from 'react'
-
-const NavCard = () => {
+import "../styles/NavCard.css"
+const NavCard = ({name, price, image}) => {
   return (
-    <div>NavCard</div>
+    <div className='navCard'></div>
   )
 }
 

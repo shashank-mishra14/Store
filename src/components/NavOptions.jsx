@@ -1,6 +1,16 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import NavCard from './NavCard.jsx'
-const NavOptions = ({miPhones, redmiPhones, tv, laptop, fitnessAndLifestyle, home, audio, accessories} ) => {
+const NavOptions = ({miPhones, redmiPhones, tv, laptop, fitnessAndLifeStyle, home, audio, accessories} ) => {
+
+    const [miPhoneToggle, setMiPhoneToggle] = useState(false);
+    const [redmiPhoneToggle,setRedmiPhoneToggle] = useState(false);
+    const [tvToggle,setTvToggle] = useState(false);
+    const [laptopToggle,setLaptopToggle] = useState(false);
+    const [fitnessToggle,setFitnessToggle] = useState(false);
+    const [homeToggle,setHomeToggle] = useState(false);
+    const [audioToggle,setAudioToggle] = useState(false);
+    const [accessoriesToggle,setAccessoriesToggle] = useState(false);
+    
     return (
         <div className="navOptions"> 
 
