@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import NavCard from './NavCard.jsx'
+import "../styles/NavOptions.css"
 const NavOptions = ({miPhones, redmiPhones, tv, laptop, fitnessAndLifeStyle, home, audio, accessories} ) => {
 
     const [miPhoneToggle, setMiPhoneToggle] = useState(false);
