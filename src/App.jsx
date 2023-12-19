@@ -14,40 +14,66 @@ import ProductReviews from "./components/ProductReviews.jsx";
 import Video from "./components/Video.jsx";
 import Banner from "./components/Banner.jsx";
 import Footer from "./components/Footer.jsx";
+import NavOptions from "./components/NavOptions.jsx";
 function App() {
   return (
     <div>
       <Router>
         <PreNavbar />
-        <Navbar />
-        <Slider start={data.banner.start}/>
-        <Offers  offer  ={data.offer}/>
-        <Heading text={"Star Products"}/>
-        <StarProduct starProduct={data.starProduct}/>
-        <Heading text={"Hot Accessories"}/>
-        <HotAcceessoriesMenu/>
+        <Navbar
+          miPhones={data.miPhones}
+          redmiPhones={data.redmiPhones}
+          tv={data.tv}
+          laptop={data.laptop}
+          fitnessAndLifeStyle={data.fitnessAndLifeStyle}
+          home={data.home}
+          audio={data.audio}
+          accessories={data.accessories}
+        />
+        <NavOptions />
+        <Slider start={data.banner.start} />
+        <Offers offer={data.offer} />
+        <Heading text={"Star Products"} />
+        <StarProduct starProduct={data.starProduct} />
+        <Heading text={"Hot Accessories"} />
+        <HotAcceessoriesMenu />
         <Route exact path="/music">
-        <HotAcceessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}/> 
+          <HotAcceessories
+            music={data.hotAccessories.music}
+            musicCover={data.hotAccessoriesCover.music}
+          />
         </Route>
         <Route exact path="/smartDevice">
-        <HotAcceessories smartDevice={data.hotAccessories.smartDevice} smartDeviceCover={data.hotAccessoriesCover.smartDevice}/> 
+          <HotAcceessories
+            smartDevice={data.hotAccessories.smartDevice}
+            smartDeviceCover={data.hotAccessoriesCover.smartDevice}
+          />
         </Route>
         <Route exact path="/home">
-        <HotAcceessories home={data.hotAccessories.home} homeCover={data.hotAccessoriesCover.home}/> 
+          <HotAcceessories
+            home={data.hotAccessories.home}
+            homeCover={data.hotAccessoriesCover.home}
+          />
         </Route>
         <Route exact path="/lifestyle">
-        <HotAcceessories lifeStyle={data.hotAccessories.lifestyle} lifeStyleCover={data.hotAccessoriesCover.lifeStyle}/> 
+          <HotAcceessories
+            lifeStyle={data.hotAccessories.lifestyle}
+            lifeStyleCover={data.hotAccessoriesCover.lifeStyle}
+          />
         </Route>
         <Route exact path="/mobileAccessories">
-        <HotAcceessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}/> 
+          <HotAcceessories
+            mobileAccessories={data.hotAccessories.mobileAccessories}
+            mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}
+          />
         </Route>
-        <Heading text={"Product Reviews"}/>
-        <ProductReviews productReviews={data.productReviews}/>
-        <Heading text={"Videos"}/>
-        <Video vidoes ={data.videos}/>
-        <Heading text={"IN THE PRESS"}/>
-        <Banner banner={data.banner}/>
-        <Footer footer={data.footer}/>
+        <Heading text={"Product Reviews"} />
+        <ProductReviews productReviews={data.productReviews} />
+        <Heading text={"Videos"} />
+        <Video vidoes={data.videos} />
+        <Heading text={"IN THE PRESS"} />
+        <Banner banner={data.banner} />
+        <Footer footer={data.footer} />
       </Router>
     </div>
   );
