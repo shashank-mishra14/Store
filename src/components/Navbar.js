@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/nav.css";
-import { logo } from "../data/data.json";
+import logo from "../data/data.json";
 
 const searchIcon = (
   <svg
